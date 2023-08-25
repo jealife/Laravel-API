@@ -7,12 +7,12 @@ export default function Card({ num }) {
     let src2 = "https://i.pravatar.cc/40?Image=" + num;
     return (
         <div>
-            <div className="card-container bg-white p-1 rounded-md m-2" >
+            <div className="card-container bg-white px-2 py-3 rounded-2xl m-2 w-64 flex flex-col items-center gap-3 " >
                 <div className="card-cover">
-                    <img src={src} alt="card__image" className="card__image rounded-lg h-56 w-56 object-cover" width="600" />
+                    <img src={src} alt="card__image" className="card__image rounded-2xl h-56 w-full object-cover" width="600" />
                 </div>
-                <div  className="card-profill-wrapper flex justify-between px-1 self-center">
-                    <Link href='/' className="user flex gap-1">
+                <div className="card-profile-wrapper w-full flex justify-between items-center px-1 self-center my-2">
+                    <Link href='/' className="user flex gap-2">
                         <div className="profile-pic">
                             <img src={src2} alt="user__image" className="user__image rounded-full " />
                         </div>
@@ -24,6 +24,14 @@ export default function Card({ num }) {
                     <Link href='/' className="call text-slate-600 text-sm">
                         <span>Call</span>
                     </Link>
+
+                </div>
+                <div className="service px-1">
+                    <span className="call text-slate-900 text-sm">Vidange - </span>
+                    <span className="call text-slate-900 text-sm">Vidange - </span>
+                    <span className="call text-slate-900 text-sm"> Lavage - </span>
+                    <span className="call text-slate-900 text-sm"> Lavage - </span>
+                    <span className="call text-slate-900 text-sm"> Déppannage -</span>
                 </div>
             </div>
         </div>
