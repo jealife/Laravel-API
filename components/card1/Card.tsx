@@ -2,14 +2,14 @@ import Link from "next/link";
 
 
 
-export default function Card({ num }) {
+export default function Card({num}) {
     let src = 'https://unsplash.it/' + num;
     let src2 = "https://i.pravatar.cc/40?Image=" + num;
     return (
         <div>
             <div className="card-container bg-white px-2 py-3 rounded-2xl m-2 w-64 flex flex-col items-center gap-3 " >
                 <div className="card-cover">
-                    <img src={src} alt="card__image" className="card__image rounded-2xl h-56 w-full object-cover" width="600" />
+                    <img src={src} alt="card__image" className="card__image rounded-2xl w-full object-cover" width="600" />
                 </div>
                 <div className="card-profile-wrapper w-full flex justify-between items-center px-1 self-center my-2">
                     <Link href='/' className="user flex gap-2">

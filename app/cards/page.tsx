@@ -10,14 +10,14 @@ export default function Cards() {
 
       <h1 className='text-5xl'>Cards</h1>
       <div className="wrapper m-11">
-        <Card num={600}/>
-        <Card num={610}/>
-        <Card num={620}/>
+        <Card num="600"/>
+        <Card num="610"/>
+        <Card num="620"/>
       </div>
       <div className="wrapper m-11">
-        <Card2 num={640}/>
-        <Card2 num={630}/>
-        <Card2 num={650}/>
+        <Card2 num="640"/>
+        <Card2 num="630"/>
+        <Card2 num="650"/>
       </div>
     </main>
   )
