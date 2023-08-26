@@ -9,7 +9,7 @@ export default function Cards() {
     <main className="flex min-h-screen flex-col items-center justify-center py-8 mt-11">
 
       <h1 className='text-5xl'>Cards</h1>
-      <div className="wrapper m-11">
+      <div className="wrapper m-11 ">
         <Card num={"600"}/>
         <Card num="610"/>
         <Card num="620"/>
