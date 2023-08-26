@@ -2,12 +2,12 @@ import Link from "next/link";
 
 
 
-export default function Card({num}) {
+export default function Card({num}:any) {
     let src = 'https://unsplash.it/' + num;
     let src2 = "https://i.pravatar.cc/40?Image=" + num;
     return (
-        <div>
-            <div className="card-container bg-white px-2 py-3 rounded-2xl m-2 w-64 flex flex-col items-center gap-3 " >
+        <div >
+            <div className="card-container bg-white px-2 py-3 rounded-2xl m-2 w-64 flex flex-col items-center gap-3 shadow-xl " >
                 <div className="card-cover">
                     <img src={src} alt="card__image" className="card__image rounded-2xl w-full object-cover" width="600" />
                 </div>

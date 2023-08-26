@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header className='bg-slate-900 fixed w-full z-100 top-0'>
+      <header className='backdrop-blur-sm bg-white/30 fixed w-full z-100 top-0'>
         <Nav/>
       </header>
         

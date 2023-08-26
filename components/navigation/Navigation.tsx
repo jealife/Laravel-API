@@ -2,12 +2,12 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import './nav.css'
-export function Navigation({ navLinks }) {
+export function Navigation({ navLinks }:any) {
     const pathname = usePathname()
 
     return (
         <>
-            {navLinks.map((link) => {
+            {navLinks.map((link:any) => {
                 const isActive = pathname === link.href
 
                 return (

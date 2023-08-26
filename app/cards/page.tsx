@@ -10,7 +10,7 @@ export default function Cards() {
 
       <h1 className='text-5xl'>Cards</h1>
       <div className="wrapper m-11">
-        <Card num="600"/>
+        <Card num={"600"}/>
         <Card num="610"/>
         <Card num="620"/>
       </div>
